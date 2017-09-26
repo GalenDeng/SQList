@@ -66,3 +66,11 @@ UPDATE edits a row in a table.
 ALTER TABLE changes an existing table.
 DELETE FROM deletes rows from a table.
 ```
+10. `修改字段类型的操作` 
+```   
+ALTER TABLE table_name ALTER COLUMN column_name new_data_type 
+```
+11. `删除字段的操作`
+```   
+ALTER TABLE table_NAME DROP COLUMN column_NAME   
+```
