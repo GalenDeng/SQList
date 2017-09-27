@@ -74,3 +74,7 @@ ALTER TABLE table_name ALTER COLUMN column_name new_data_type
 ```   
 ALTER TABLE table_NAME DROP COLUMN column_NAME   
 ```
+12. `新增一个margin的字段，并设置其类型为整形，并限定其值默认为0，不为空`
+```
+ALTER TABLE "users"."users_ext" ADD COLUMN margin INTEGER DEFAULT 0 NOT NULL;
+```
