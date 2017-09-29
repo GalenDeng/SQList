@@ -78,3 +78,7 @@ ALTER TABLE table_NAME DROP COLUMN column_NAME
 ```
 ALTER TABLE "users"."users_ext" ADD COLUMN margin INTEGER DEFAULT 0 NOT NULL;
 ```
+13. `创建一个新的字段，默认时间为该表刚创建的时间，之后就不修改这个时间了`
+```
+ALTER TABLE "ads"."incomemoney" ADD COLUMN created TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+```
