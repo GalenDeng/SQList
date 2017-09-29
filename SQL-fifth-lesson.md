@@ -5,7 +5,7 @@
 1. `显示十行数据`
 ```
 Introduction:
-/作用：Select ten rows from the flights table./
+/作用：Select ten rows from the flights table./0
 
 SELECT * FROM Flights LIMIT 10;
 
