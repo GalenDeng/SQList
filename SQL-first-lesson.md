@@ -82,3 +82,11 @@ ALTER TABLE "users"."users_ext" ADD COLUMN margin INTEGER DEFAULT 0 NOT NULL;
 ```
 ALTER TABLE "ads"."incomemoney" ADD COLUMN created TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 ```
+14. 
+```
+select * from users.users where username = '13542148063';
+```
+15. `删除这一行的数据记录`
+```
+delete from users.users where username = '13542148063'; 
+```
