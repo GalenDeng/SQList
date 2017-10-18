@@ -94,3 +94,7 @@ delete from users.users where username = '13542148063';
 ```
 update ads.advertiser set crmuuid =  '900dbc90-36c9-4e5a-9150-17f36edf0014'   where uuid = '1c97e4e4-f1bb-11e6-a4d8-0242ac110002'
 ```
+17. `添加注释`
+```
+COMMENT ON COLUMN users.users_ext.crm_total_balance IS '历史总余额';
+```
