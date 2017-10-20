@@ -98,3 +98,7 @@ update ads.advertiser set crmuuid =  '900dbc90-36c9-4e5a-9150-17f36edf0014'   wh
 ```
 COMMENT ON COLUMN users.users_ext.crm_total_balance IS '历史总余额';
 ```
+18. `更新字段值`
+```
+UPDATE  users.users_ext  set crm_balance = 10000,crm_total_balance=10000 where uuid = 'e850d0b6-360c-45a0-8177-4074d9dc85c7';
+```
