@@ -102,3 +102,7 @@ COMMENT ON COLUMN users.users_ext.crm_total_balance IS '历史总余额';
 ```
 UPDATE  users.users_ext  set crm_balance = 10000,crm_total_balance=10000 where uuid = 'e850d0b6-360c-45a0-8177-4074d9dc85c7';
 ```
+19. `删除记录`
+```
+delete from ads.advertiser  where balance is null
+```
