@@ -27,3 +27,16 @@ id	carrier	origin	destination	flight_num	flight_time	tail_num	dep_time	arr_time	
 ```
 SELECT * FROM flights WHERE origin in (SELECT code FROM airports WHERE elevation < 2000);
 ```
+3. `like的用法`
+```
+let res = await sequelize.query(`select count(*) from ads.adslog as a, users.users as b where a.useruuid=b.uuid and a.aduuid='${adsuuid}' and (b.username like '%${searchdata}%') `, { type: "SELECT" }) as any[]
+```
+* count(*)计算行数
+* ads.adslog as a 用`a`来代表`ads.adslog表`
+* a.aduuid='${adsuuid}' ：`两者相等`
+* (b.username like '%${searchdata}%') ` 
+  `%` ： `用于定义通配符（模式中缺少的字母）`
+  理解为UNIX系统的 (b.username = *${searchdata}*)
+* `'%g'` : `选取以 "g" 结尾`
+* `'N%'` : `选取以 "N" 开始`
+* `NOT LIKE '%lon%'` : `选取不包含 "lon" `
