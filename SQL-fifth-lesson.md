@@ -40,3 +40,8 @@ let res = await sequelize.query(`select count(*) from ads.adslog as a, users.use
 * `'%g'` : `选取以 "g" 结尾`
 * `'N%'` : `选取以 "N" 开始`
 * `NOT LIKE '%lon%'` : `选取不包含 "lon" `
+4. `创建Schemas`
+* 创建table之前记得要先创建Schemas
+```
+CREATE SCHEMA users
+```
