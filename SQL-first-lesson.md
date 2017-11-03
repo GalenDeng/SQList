@@ -106,7 +106,7 @@ UPDATE  users.users_ext  set crm_balance = 10000,crm_total_balance=10000 where u
 ```
 delete from ads.advertiser  where balance is null
 ```
-20. `创建数组字段，并给该数组字段赋予默认值`
+20. `创建数组字段，并给该数组字段赋予其默认值`
 ```
 ALTER TABLE users.users_ext  ADD COLUMN crm_balance_state text[] NOT NULL DEFAULT '{1,0}';
 ```
