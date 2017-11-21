@@ -110,3 +110,7 @@ delete from ads.advertiser  where balance is null
 ```
 ALTER TABLE users.users_ext  ADD COLUMN crm_balance_state text[] NOT NULL DEFAULT '{1,0}';
 ```
+21. `查找where条件下的所有num的值相加的总数`
+```
+select sum(num) from mall.lotterylevel where "level"='1' and "state" ='cashlottery' and "receive" = 'false'  
+```
