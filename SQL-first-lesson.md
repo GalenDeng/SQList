@@ -114,3 +114,7 @@ ALTER TABLE users.users_ext  ADD COLUMN crm_balance_state text[] NOT NULL DEFAUL
 ```
 select sum(num) from mall.lotterylevel where "level"='1' and "state" ='cashlottery' and "receive" = 'false'  
 ```
+22. `挑选条件为"level"='1' and "state" ='cashlottery'的记录数，并把这个记录数的名称设为 awardnum`
+```
+select count(*) as awardnum from  mall.awardusers  where "level"='1' and "state" ='cashlottery' 
+```
